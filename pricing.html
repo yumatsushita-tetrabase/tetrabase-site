@@ -105,10 +105,76 @@
       margin-bottom: 6rem;
     }
 
-    /* ===== Compare Table ===== */
+    /* ===== Pricing specific ===== */
+    .plans {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .plan {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .plan-name {
+      font-size: 0.9rem;
+      letter-spacing: 0.18em;
+      opacity: 0.7;
+      margin: 0 0 10px;
+    }
+
+    .plan-price {
+      font-size: 2rem;
+      letter-spacing: 0.02em;
+      margin: 0 0 6px;
+    }
+
+    .plan-sub {
+      font-size: 0.95rem;
+      opacity: 0.65;
+      margin: 0 0 14px;
+      line-height: 1.7;
+    }
+
+    .muted {
+      opacity: 0.6;
+      font-size: 0.9rem;
+      line-height: 1.9;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+      margin: 14px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      opacity: 0.75;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      margin-bottom: 12px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .note {
+      font-size: 0.9rem;
+      opacity: 0.65;
+      line-height: 1.9;
+      margin-top: 1.2rem;
+    }
+
+    /* ===== Minimal Compare Table ===== */
     .compare {
       width: 100%;
       border-collapse: collapse;
+      border-spacing: 0;
       margin-top: 6px;
     }
 
@@ -130,21 +196,21 @@
       padding-top: 0;
     }
 
-    .compare th:first-child {
+    .compare th:first-child,
+    .compare td:first-child {
       width: 34%;
       opacity: 0.6;
+    }
+
+    .compare td:nth-child(2),
+    .compare td:nth-child(3) {
+      width: 33%;
     }
 
     .compare .price {
       font-size: 1.25rem;
       letter-spacing: 0.02em;
       opacity: 0.9;
-    }
-
-    .muted {
-      font-size: 0.9rem;
-      opacity: 0.6;
-      line-height: 1.9;
     }
   </style>
 </head>
@@ -160,7 +226,59 @@
         <div class="tagline">Pricing</div>
       </div>
 
-      <!-- ===== Compare ===== -->
+      <!-- ===== PLANS (cards) ===== -->
+      <section>
+        <h2>PLANS</h2>
+
+        <div class="plans">
+          <div class="plan">
+            <div class="plan-name">FREE</div>
+            <div class="plan-price">¥0</div>
+            <div class="plan-sub">まずは、指導の記録をシンプルに。</div>
+
+            <ul>
+              <li>生徒情報の登録・管理（1名まで）</li>
+              <li>指導記録の作成・閲覧</li>
+              <li>学習計画の作成・管理</li>
+              <li>月次指導報告書の作成・PDF出力</li>
+              <li>請求書の作成・PDF出力</li>
+            </ul>
+
+            <div class="divider"></div>
+            <p class="muted">
+              ※ Freeプランでは、出力されるPDFに <strong>TetraBaseロゴの表示</strong> が含まれます。
+            </p>
+          </div>
+
+          <div class="plan">
+            <div class="badge">7 DAYS FREE TRIAL</div>
+            <div class="plan-name">PRO</div>
+            <div class="plan-price">¥550 <span class="muted">/ 月（税込）</span></div>
+            <div class="plan-sub">事務作業を減らして、指導に集中する。</div>
+
+            <ul>
+              <li>生徒情報の登録・管理（人数無制限）</li>
+              <li>指導記録・学習計画の一元管理</li>
+              <li>月次指導報告書PDFの作成・出力（ロゴ表示なし）</li>
+              <li>請求書PDFの自動生成（ロゴ表示なし）</li>
+              <li>今後追加されるPro向け機能をすべて利用可能</li>
+            </ul>
+
+            <div class="divider"></div>
+            <p class="muted">
+              お支払い：クレジットカード決済（Stripe）<br />
+              解約：次回更新日前までにいつでも可能（解約後は次回更新日以降の課金なし）
+            </p>
+          </div>
+        </div>
+
+        <p class="note">
+          ※ 価格・提供内容は、サービス改善のため変更される場合があります。<br />
+          ※ 無料トライアル終了後は、自動的にProプランの月額課金に移行します（継続しない場合は更新日前までに解約できます）。
+        </p>
+      </section>
+
+      <!-- ===== COMPARE (minimal table) ===== -->
       <section>
         <h2>COMPARE</h2>
 
@@ -178,26 +296,31 @@
               <td class="price">¥0</td>
               <td class="price">¥550 <span class="muted">/ 月（税込）</span></td>
             </tr>
+
             <tr>
               <th>生徒数</th>
               <td>1名まで</td>
               <td>無制限</td>
             </tr>
+
             <tr>
               <th>報告書PDF</th>
               <td>〇</td>
               <td>〇</td>
             </tr>
+
             <tr>
               <th>請求書PDF</th>
               <td>〇</td>
               <td>〇</td>
             </tr>
+
             <tr>
               <th>PDFロゴ</th>
               <td>表示あり</td>
               <td>表示なし</td>
             </tr>
+
             <tr>
               <th>トライアル</th>
               <td>—</td>
@@ -212,17 +335,26 @@
         </p>
       </section>
 
-      <!-- ===== Description ===== -->
+      <!-- ===== FAQ ===== -->
       <section>
-        <h2>ABOUT PLANS</h2>
-        <p>
-          Freeプランは、少人数の指導や個人利用に十分な機能を備えています。<br />
-          生徒数が増え、書類や管理の信頼性を高めたい場合は、Proプランへ自然に移行できます。
-        </p>
+        <h2>FAQ</h2>
+
+        <p><strong>Q. 無料トライアル中に解約できますか？</strong><br />
+          A. はい。次回更新日前までに解約すれば、更新日以降の課金は発生しません。</p>
+
+        <p><strong>Q. 支払い方法は何ですか？</strong><br />
+          A. クレジットカード決済（Stripe）です。</p>
+
+        <p><strong>Q. 返金はできますか？</strong><br />
+          A. デジタルサービスの性質上、原則として返品・返金には応じておりません。重大な不具合がある場合は個別に対応します。</p>
+
+        <p><strong>Q. 解約したらデータは消えますか？</strong><br />
+          A. データは保持されます。解約後はFreeプランに戻り、生徒は最初の1名のみ選択可能になります。</p>
       </section>
 
       <footer>
         <a href="./index.html">Home</a><br>
+        <a href="./pricing.html">プラン・料金</a><br>
         <a href="./tokusho.html">特定商取引法に基づく表記</a><br>
         Contact: <a href="mailto:contact@tetrabase.net">contact@tetrabase.net</a><br>
         © 2026 TetraBase

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>TetraBase | Pricing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TetraBaseの料金プラン（Free / Pro）についてのページです。" />
+
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f10;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 120px 24px;
+    }
+
+    .content {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      letter-spacing: 0.06em;
+      margin: 0 0 1rem;
+      text-align: center;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      opacity: 0.7;
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
+    section {
+      max-width: 430px;
+      margin: 0 auto 5rem;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      opacity: 0.45;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      line-height: 2;
+      font-size: 1rem;
+      opacity: 0.85;
+      margin: 0 0 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      line-height: 2;
+      font-size: 1rem;
+      opacity: 0.85;
+      margin: 0 0 0.35rem;
+    }
+
+    footer {
+      max-width: 430px;
+      margin: 6rem auto 0;
+      text-align: left;
+      font-size: 0.85rem;
+      opacity: 0.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 1.2rem;
+      width: 60px;
+      opacity: 0.55;
+    }
+
+    .logo:hover {
+      opacity: 0.8;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+
+    /* ===== Compare Table ===== */
+    .compare {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+    }
+
+    .compare th,
+    .compare td {
+      text-align: left;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 1rem;
+      line-height: 1.8;
+      opacity: 0.85;
+    }
+
+    .compare thead th {
+      font-size: 0.75rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      opacity: 0.55;
+      padding-top: 0;
+    }
+
+    .compare th:first-child {
+      width: 34%;
+      opacity: 0.6;
+    }
+
+    .compare .price {
+      font-size: 1.25rem;
+      letter-spacing: 0.02em;
+      opacity: 0.9;
+    }
+
+    .muted {
+      font-size: 0.9rem;
+      opacity: 0.6;
+      line-height: 1.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div class="hero">
+        <a href="./index.html" aria-label="Back to home">
+          <img src="logo.png" alt="TetraBase logo" class="logo" />
+        </a>
+        <h1>TetraBase</h1>
+        <div class="tagline">Pricing</div>
+      </div>
+
+      <!-- ===== Compare ===== -->
+      <section>
+        <h2>COMPARE</h2>
+
+        <table class="compare" aria-label="Pricing comparison table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>FREE</th>
+              <th>PRO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>月額</th>
+              <td class="price">¥0</td>
+              <td class="price">¥550 <span class="muted">/ 月（税込）</span></td>
+            </tr>
+            <tr>
+              <th>生徒数</th>
+              <td>1名まで</td>
+              <td>無制限</td>
+            </tr>
+            <tr>
+              <th>報告書PDF</th>
+              <td>〇</td>
+              <td>〇</td>
+            </tr>
+            <tr>
+              <th>請求書PDF</th>
+              <td>〇</td>
+              <td>〇</td>
+            </tr>
+            <tr>
+              <th>PDFロゴ</th>
+              <td>表示あり</td>
+              <td>表示なし</td>
+            </tr>
+            <tr>
+              <th>トライアル</th>
+              <td>—</td>
+              <td>7日間</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="muted" style="margin-top: 1.2rem;">
+          ※ Freeプランでは、出力されるPDFに TetraBaseロゴの表示が含まれます。<br />
+          ※ Proプランでは、報告書・請求書PDFをロゴ表示なしの正式な書類として出力できます。
+        </p>
+      </section>
+
+      <!-- ===== Description ===== -->
+      <section>
+        <h2>ABOUT PLANS</h2>
+        <p>
+          Freeプランは、少人数の指導や個人利用に十分な機能を備えています。<br />
+          生徒数が増え、書類や管理の信頼性を高めたい場合は、Proプランへ自然に移行できます。
+        </p>
+      </section>
+
+      <footer>
+        <a href="./index.html">Home</a><br>
+        <a href="./tokusho.html">特定商取引法に基づく表記</a><br>
+        Contact: <a href="mailto:contact@tetrabase.net">contact@tetrabase.net</a><br>
+        © 2026 TetraBase
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

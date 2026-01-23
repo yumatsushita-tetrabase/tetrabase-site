@@ -122,10 +122,68 @@
       text-align: center;
       margin-bottom: 6rem;
     }
+
+    /* ===== Header ===== */
+.header {
+  max-width: 720px;
+  margin: 0 auto 5rem;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo {
+  width: 36px;
+  opacity: 0.6;
+}
+
+.header-title {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
+}
+
+.header-nav {
+  display: flex;
+  gap: 18px;
+}
+
+.header-nav a {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  opacity: 0.6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.header-nav a:hover {
+  opacity: 0.9;
+}
+
   </style>
 </head>
 
 <body>
+  <header class="header">
+  <div class="header-left">
+    <a href="./index.html">
+      <img src="logo.png" alt="TetraBase logo" class="header-logo" />
+    </a>
+    <span class="header-title">TetraBase</span>
+  </div>
+
+  <nav class="header-nav">
+    <a href="./index.html">Home</a>
+    <a href="./pricing.html">プラン・料金</a>
+  </nav>
+</header>
+
   <div class="wrapper">
     <div class="content">
       <div class="hero">

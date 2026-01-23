@@ -2,151 +2,180 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>TetraBase</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TetraBaseは、家庭教師向けに指導記録・報告書・請求書を一元管理するツールです。" />
+  <meta charset="UTF-8" />
+  <title>TetraBase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TetraBaseは、家庭教師向けに指導記録・報告書・請求書を一元管理するツールです。" />
 
-    <style>
-        body {
-            margin: 0;
-            background: #0f0f10;
-            color: #ffffff;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-        }
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f10;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
 
-        .wrapper {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            padding: 120px 24px;
-        }
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 120px 24px;
+    }
 
-        .content {
-            max-width: 720px;
-            width: 100%;
-        }
+    .content {
+      max-width: 720px;
+      width: 100%;
+    }
 
-        h1 {
-            font-size: 3.5rem;
-            letter-spacing: 0.06em;
-            margin: 0 0 1rem;
-            text-align: center;
+    h1 {
+      font-size: 3.5rem;
+      letter-spacing: 0.06em;
+      margin: 0 0 1rem;
+      text-align: center;
+    }
 
-        }
+    .tagline {
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      opacity: 0.7;
+      margin-bottom: 6rem;
+      text-align: center;
+    }
 
-        .tagline {
-            font-size: 1.1rem;
-            letter-spacing: 0.08em;
-            opacity: 0.7;
-            margin-bottom: 6rem;
-            text-align: center;
+    section {
+      max-width: 430px;
+      margin: 0 auto 5rem;
+      text-align: left;
+    }
 
-        }
+    h2 {
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      opacity: 0.45;
+      margin-bottom: 1.2rem;
+    }
 
-        section {
-            max-width: 430px;
-            margin: 0 auto 5rem;
-            text-align: left;
-        }
+    p {
+      line-height: 2;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
 
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-        h2 {
-            font-size: 0.75rem;
-            letter-spacing: 0.25em;
-            opacity: 0.45;
-            margin-bottom: 1.2rem;
-        }
+    li {
+      line-height: 2;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
 
+    /* ===== Features detail ===== */
+    .features li {
+      margin-bottom: 1.2rem;
+    }
 
-        p {
-            line-height: 2;
-            font-size: 1rem;
-            opacity: 0.85;
-        }
+    .features .feat-title {
+      display: block;
+      font-size: 1rem;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
 
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    .features .feat-desc {
+      display: block;
+      font-size: 0.95rem;
+      opacity: 0.62;
+      line-height: 1.9;
+      margin-top: 0.25rem;
+    }
 
-        li {
-            line-height: 2;
-            font-size: 1rem;
-            opacity: 0.85;
-        }
+    footer {
+      max-width: 430px;
+      margin: 6rem auto 0;
+      text-align: left;
+      font-size: 0.85rem;
+      opacity: 0.5;
+    }
 
-        footer {
-            max-width: 430px;
-            margin: 6rem auto 0;
-            text-align: left;
-            font-size: 0.85rem;
-            opacity: 0.5;
-        }
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
+    .logo {
+      display: block;
+      margin: 0 auto 1.2rem;
+      width: 60px;
+      opacity: 0.55;
+    }
 
-        .logo {
-            display: block;
-            margin: 0 auto 1.2rem;
-            width: 60px;
-            opacity: 0.55;
-        }
+    .logo:hover {
+      opacity: 0.8;
+    }
 
-        .logo:hover {
-            opacity: 0.8;
-        }
-
-        .hero {
-            text-align: center;
-            margin-bottom: 6rem;
-        }
-    </style>
+    .hero {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="content">
-            <div class="hero">
-                <img src="logo.png" alt="TetraBase logo" class="logo" />
-                <h1>TetraBase</h1>
-                <div class="tagline">For Every Private Tutor</div>
-            </div>
+  <div class="wrapper">
+    <div class="content">
+      <div class="hero">
+        <img src="logo.png" alt="TetraBase logo" class="logo" />
+        <h1>TetraBase</h1>
+        <div class="tagline">For Every Private Tutor</div>
+      </div>
 
-            <section>
-                <h2>ABOUT</h2>
-                <p>
-                    TetraBaseは、家庭教師向けに<br>
-                    指導記録・学習計画・報告書・請求書を
-                    一元管理するツールです。
-                </p>
-            </section>
+      <section>
+        <h2>ABOUT</h2>
+        <p>
+          TetraBaseは、家庭教師向けに<br>
+          指導記録・学習計画・報告書・請求書を
+          一元管理するツールです。
+        </p>
+      </section>
 
-            <section>
-                <h2>FEATURES</h2>
-                <ul>
-                    <li>指導記録の管理</li>
-                    <li>月次報告書の作成</li>
-                    <li>請求書の自動生成</li>
-                    <li>生徒情報の一元管理</li>
-                </ul>
-            </section>
+      <section>
+        <h2>FEATURES</h2>
+        <ul class="features">
+          <li>
+            <span class="feat-title">指導記録の管理</span>
+            <span class="feat-desc">毎回の指導内容・宿題・気づきをまとめて残し、振り返りと継続指導をスムーズにします。</span>
+          </li>
 
-            <footer>
-                <a href="./pricing.html">プラン・料金</a><br>
-                <a href="./tokusho.html">特定商取引法に基づく表記</a><br>
-                Contact: <a href="mailto:contact@tetrabase.net">contact@tetrabase.net</a><br>
-                © 2026 TetraBase
-            </footer>
+          <li>
+            <span class="feat-title">月次報告書の作成</span>
+            <span class="feat-desc">その月の取り組みを整理し、保護者共有用の報告書をPDFで出力できます。</span>
+          </li>
 
+          <li>
+            <span class="feat-title">請求書の自動生成</span>
+            <span class="feat-desc">指導実績から請求内容をまとめ、請求書PDFを素早く作成できます。</span>
+          </li>
 
-        </div>
+          <li>
+            <span class="feat-title">生徒情報の一元管理</span>
+            <span class="feat-desc">連絡先や指導方針、教材などをまとめて管理し、情報の散逸を防ぎます。</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <a href="./pricing.html">プラン・料金</a><br>
+        <a href="./tokusho.html">特定商取引法に基づく表記</a><br>
+        Contact: <a href="mailto:contact@tetrabase.net">contact@tetrabase.net</a><br>
+        © 2026 TetraBase
+      </footer>
     </div>
+  </div>
 </body>
 
 </html>

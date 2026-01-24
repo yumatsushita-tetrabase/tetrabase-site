@@ -11,12 +11,22 @@
     :root {
       --header-h: 64px;
       --logo-size: 60px;
+
+      /* === Color Theme (Navy Light) === */
+      --bg-main: #eef2f7;
+      --bg-header: rgba(255, 255, 255, 0.82);
+
+      --text-main: #0f172a;
+      --text-sub: #334155;
+      --text-muted: #64748b;
+
+      --navy-accent: #1e3a8a;
     }
 
     body {
       margin: 0;
-      background: #0f0f10;
-      color: #ffffff;
+      background: var(--bg-main);
+      color: var(--text-main);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
@@ -43,9 +53,9 @@
       align-items: center;
       justify-content: center;
 
-      background: rgba(15, 15, 16, 0.72);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background: var(--bg-header);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
 
     .header-inner {
@@ -68,7 +78,8 @@
     .header-title {
       font-size: 0.95rem;
       letter-spacing: 0.12em;
-      opacity: 0.8;
+      color: var(--navy-accent);
+      opacity: 0.85;
       white-space: nowrap;
     }
 
@@ -91,14 +102,15 @@
     .header-nav a {
       font-size: 0.85rem;
       letter-spacing: 0.18em;
-      opacity: 0.6;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--text-sub);
+      opacity: 0.8;
+      border-bottom: 1px solid rgba(30, 58, 138, 0.2);
       text-decoration: none;
-      color: inherit;
     }
 
     .header-nav a:hover {
-      opacity: 0.9;
+      color: var(--navy-accent);
+      opacity: 1;
     }
 
     /* ===== Layout ===== */
@@ -121,12 +133,13 @@
       letter-spacing: 0.06em;
       margin: 0 0 1rem;
       text-align: center;
+      color: var(--navy-accent);
     }
 
     .tagline {
       font-size: 1.1rem;
       letter-spacing: 0.08em;
-      opacity: 0.7;
+      color: var(--text-muted);
       margin-bottom: 6rem;
       text-align: center;
     }
@@ -140,14 +153,14 @@
     h2 {
       font-size: 0.75rem;
       letter-spacing: 0.25em;
-      opacity: 0.45;
+      color: var(--text-muted);
       margin-bottom: 1.2rem;
     }
 
     p {
       line-height: 2;
       font-size: 1rem;
-      opacity: 0.85;
+      color: var(--text-sub);
       margin: 0 0 1.2rem;
     }
 
@@ -160,7 +173,7 @@
     li {
       line-height: 2;
       font-size: 1rem;
-      opacity: 0.85;
+      color: var(--text-sub);
       margin: 0 0 0.8rem;
     }
 
@@ -172,20 +185,20 @@
 
     .kv-item {
       padding: 12px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(30, 58, 138, 0.12);
     }
 
     .kv-key {
       font-size: 0.75rem;
       letter-spacing: 0.18em;
-      opacity: 0.5;
+      color: var(--text-muted);
       margin-bottom: 0.4rem;
     }
 
     .kv-val {
       line-height: 2;
       font-size: 1rem;
-      opacity: 0.85;
+      color: var(--text-sub);
     }
 
     footer {
@@ -197,9 +210,13 @@
     }
 
     a {
-      color: inherit;
+      color: var(--navy-accent);
       text-decoration: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(30, 58, 138, 0.25);
+    }
+
+    a:hover {
+      border-bottom-color: rgba(30, 58, 138, 0.6);
     }
 
     /* ===== Hero ===== */
@@ -215,7 +232,7 @@
 
     .logo-fixed {
       width: var(--logo-size);
-      opacity: 0.55;
+      opacity: 1;
 
       position: fixed;
       left: 50%;
@@ -237,7 +254,7 @@
 
     .note {
       font-size: 0.9rem;
-      opacity: 0.65;
+      color: var(--text-muted);
     }
 
     html {

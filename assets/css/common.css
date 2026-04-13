@@ -185,6 +185,29 @@ a:hover {
   margin-bottom: 6rem;
 }
 
+/* ===== PC: reduce vertical spacing ===== */
+@media (min-width: 768px) {
+  .wrapper {
+    padding: calc(60px + var(--header-h)) 24px 60px;
+  }
+
+  .tagline {
+    margin-bottom: 3rem;
+  }
+
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+}
+
 .logo-spacer {
   height: var(--logo-size);
   margin: 0 auto 1.2rem;

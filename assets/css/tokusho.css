@@ -1,0 +1,40 @@
+p {
+  margin: 0 0 1.2rem;
+}
+
+li {
+  line-height: 2;
+  font-size: 1rem;
+  color: var(--text-sub);
+  margin: 0 0 0.8rem;
+}
+
+/* ===== Key-Value list ===== */
+.kv {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+}
+
+.kv-item {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(30, 58, 138, 0.12);
+}
+
+.kv-key {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.kv-val {
+  line-height: 2;
+  font-size: 1rem;
+  color: var(--text-sub);
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,43 @@
+/* ===== Features ===== */
+.features li {
+  margin-bottom: 1.2rem;
+}
+
+.features .feat-title {
+  display: block;
+  font-size: 1rem;
+  color: var(--navy-accent);
+  line-height: 1.6;
+}
+
+.features .feat-desc {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.9;
+  margin-top: 0.25rem;
+}
+
+/* ===== Download button ===== */
+.dl-btn {
+  display: inline-block;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: var(--navy-accent);
+  color: #fff;
+  text-decoration: none;
+  border-bottom: none;
+  font-weight: 700;
+}
+
+.dl-btn:hover {
+  opacity: 0.9;
+  border-bottom: none;
+}
+
+.dl-note {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}

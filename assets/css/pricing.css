@@ -1,0 +1,118 @@
+p {
+  margin: 0 0 1.2rem;
+}
+
+li {
+  line-height: 2;
+  font-size: 1rem;
+  color: var(--text-sub);
+  margin: 0 0 0.35rem;
+}
+
+/* ===== Pricing cards ===== */
+.plans {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.plan {
+  border: 1px solid rgba(30, 58, 138, 0.14);
+  border-radius: 14px;
+  padding: 18px 18px 16px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.plan-name {
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
+
+.plan-price {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 6px;
+}
+
+.plan-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0 0 14px;
+  line-height: 1.7;
+}
+
+.muted {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(30, 58, 138, 0.12);
+  margin: 14px 0;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  color: var(--navy-accent);
+  padding: 6px 10px;
+  border: 1px solid rgba(30, 58, 138, 0.2);
+  border-radius: 999px;
+  margin-bottom: 12px;
+  background: rgba(30, 58, 138, 0.06);
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.9;
+  margin-top: 1.2rem;
+}
+
+/* ===== Compare Table ===== */
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 6px;
+}
+
+.compare th,
+.compare td {
+  text-align: left;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(30, 58, 138, 0.12);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-sub);
+}
+
+.compare thead th {
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 0;
+}
+
+.compare th:first-child,
+.compare td:first-child {
+  width: 34%;
+  color: var(--text-muted);
+}
+
+.compare td:nth-child(2),
+.compare td:nth-child(3) {
+  width: 33%;
+}
+
+.compare .price {
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  color: var(--navy-accent);
+}
